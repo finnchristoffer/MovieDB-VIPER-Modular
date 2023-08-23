@@ -19,7 +19,6 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
       .package(url: "https://github.com/onevcat/Kingfisher.git", from: "6.3.0"),
       .package(url: "https://github.com/Swinject/Swinject.git", from: "2.8.0"),
-      .package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", .upToNextMajor(from: "4.1.0")),
       .package(url: "https://github.com/finnchristoffer/MovieDB-iOS-Core.git", from: Version(stringLiteral: "1.0.0"))
     ],
     targets: [
@@ -30,7 +29,6 @@ let package = Package(
             dependencies: [
               .product(name: "Core", package: "MovieDB-iOS-Core"),
               .product(name: "Kingfisher", package: "Kingfisher"),
-              .product(name: "ObjectMapper", package: "ObjectMapper"),
               "Swinject"
             ]),
         .testTarget(

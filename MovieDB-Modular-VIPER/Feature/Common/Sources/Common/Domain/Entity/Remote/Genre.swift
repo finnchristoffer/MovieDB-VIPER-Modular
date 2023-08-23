@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Genre {
+public struct Genre: Equatable {
   public var name: String?
   public var id: Int?
   

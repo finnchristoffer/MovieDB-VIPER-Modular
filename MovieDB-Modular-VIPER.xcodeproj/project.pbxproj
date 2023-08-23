@@ -12,6 +12,9 @@
 		4A5B940F2A92F5E70062E1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B940E2A92F5E70062E1B2 /* ViewController.swift */; };
 		4A5B94142A92F5E80062E1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B94132A92F5E80062E1B2 /* Assets.xcassets */; };
 		4A5B94172A92F5E80062E1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B94152A92F5E80062E1B2 /* LaunchScreen.storyboard */; };
+		4A5B94292A93BE460062E1B2 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B94282A93BE460062E1B2 /* Common */; };
+		4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942A2A93BE460062E1B2 /* Detail */; };
+		4A5B942D2A93BE460062E1B2 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942C2A93BE460062E1B2 /* Home */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5B94292A93BE460062E1B2 /* Common in Frameworks */,
+				4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */,
+				4A5B942D2A93BE460062E1B2 /* Home in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 				4A5B94202A92F9120062E1B2 /* Packages */,
 				4A5B94092A92F5E70062E1B2 /* MovieDB-Modular-VIPER */,
 				4A5B94082A92F5E70062E1B2 /* Products */,
+				4A5B94272A93BE460062E1B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		4A5B94272A93BE460062E1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +124,11 @@
 			dependencies = (
 			);
 			name = "MovieDB-Modular-VIPER";
+			packageProductDependencies = (
+				4A5B94282A93BE460062E1B2 /* Common */,
+				4A5B942A2A93BE460062E1B2 /* Detail */,
+				4A5B942C2A93BE460062E1B2 /* Home */,
+			);
 			productName = "MovieDB-Modular-VIPER";
 			productReference = 4A5B94072A92F5E70062E1B2 /* MovieDB-Modular-VIPER.app */;
 			productType = "com.apple.product-type.application";
@@ -380,6 +399,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A5B94282A93BE460062E1B2 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+		4A5B942A2A93BE460062E1B2 /* Detail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Detail;
+		};
+		4A5B942C2A93BE460062E1B2 /* Home */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Home;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A5B93FF2A92F5E70062E1B2 /* Project object */;
 }

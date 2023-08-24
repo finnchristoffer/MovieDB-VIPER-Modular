@@ -21,11 +21,14 @@ public enum Endpoints {
   
   public enum Get: Endpoint {
     case genre
+    case listMovie(genre: Int)
     
     public var url: String {
       switch self {
       case .genre:
         return "\(API.baseUrl)/genre/movie/list?api_key=\(API.apiKey)"
+      case .listMovie(let genre):
+        return "\(API.baseUrl)/discover/movie?api_key=\(API.apiKey)&with_genres=\(genre)"
       }
     }
   }

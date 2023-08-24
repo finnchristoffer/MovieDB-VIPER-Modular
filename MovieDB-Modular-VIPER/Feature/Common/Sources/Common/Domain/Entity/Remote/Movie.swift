@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MovieResponse: Codable {
+public struct MovieResponse: Equatable {
   public var totalResults: Int?
   public var results: [Movie]?
   public var totalPages: Int?
@@ -21,7 +21,7 @@ public struct MovieResponse: Codable {
   }
 }
 
-public struct Movie: Codable {
+public struct Movie: Equatable {
   public var voteAverage: Double?
   public var genreIds: [Int]?
   public var posterPath: String?

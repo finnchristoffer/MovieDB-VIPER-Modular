@@ -48,12 +48,18 @@ class GenreTableViewCell: UITableViewCell {
     skeletonCornerRadius = 16
   }
   
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    lblTitleGenre.text = ""
+  }
+  
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
   // MARK: - Helpers
   private func configureViews() {
+    selectionStyle = .none
     
     contentView.addSubview(imgChevron)
     imgChevron.snp.makeConstraints { make in

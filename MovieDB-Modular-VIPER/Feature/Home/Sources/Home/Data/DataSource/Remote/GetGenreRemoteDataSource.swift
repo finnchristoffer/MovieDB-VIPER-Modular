@@ -18,7 +18,7 @@ public struct GetListGenreMovieRemoteDataSource: RemoteDataSource {
     return Observable.create { observer in
       let request = AF.request(Endpoints.Get.genre.url)
         .validate()
-        .responseDecodable(of: GenreResponse.self) { response in
+        .responseDecodable(of: GenreResponseModel.self) { response in
           switch response.result {
           case .success(let genreResponse):
             observer.onNext(genreResponse.genres ?? [])

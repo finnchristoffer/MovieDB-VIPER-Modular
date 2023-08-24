@@ -18,6 +18,10 @@ public class CommonModule {
       GenreResponseToDomainMapper()
     }
     
+    container.register(MovieResponseToDomainMapper.self) { _ in
+      MovieResponseToDomainMapper()
+    }
+    
     return container
   }()
 }

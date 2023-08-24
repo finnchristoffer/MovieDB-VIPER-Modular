@@ -11,11 +11,10 @@ import RxCocoa
 import SnapKit
 import SkeletonView
 import Common
-import Detail
 
-public class HomeViewController: UIViewController {
+public class ListGenreViewController: UIViewController {
   
-  init(presenter: HomePresenter) {
+  init(presenter: ListGenrePresenter) {
     self.presenter = presenter
     super.init(nibName: nil, bundle: nil)
   }
@@ -26,7 +25,7 @@ public class HomeViewController: UIViewController {
   
   // MARK: - Properties
   
-  private let presenter: HomePresenter
+  private let presenter: ListGenrePresenter
   private let disposeBag = DisposeBag()
   
   // MARK: - UI Properties
@@ -39,7 +38,6 @@ public class HomeViewController: UIViewController {
     tableView.dataSource = self
     return tableView
   }()
-  // MARK: - Init
   
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +71,7 @@ public class HomeViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource & UITableViewDelegate
-extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+extension ListGenreViewController: UITableViewDataSource, UITableViewDelegate {
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return presenter.genresMovie.value.count
   }
@@ -82,5 +80,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: GenreTableViewCell.reuseIdentifier, for: indexPath) as? GenreTableViewCell else { return UITableViewCell()}
     cell.data = presenter.genresMovie.value[indexPath.row]
     return cell
+  }
+  
+  public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    presenter.didSelectGenre(at: indexPath.row, from: self)
   }
 }

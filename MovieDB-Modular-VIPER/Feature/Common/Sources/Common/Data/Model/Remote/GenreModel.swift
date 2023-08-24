@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - GenreResponse
-public struct GenreResponse: Codable {
+public struct GenreResponseModel: Codable {
     public let genres: [GenreModel]?
 }
 

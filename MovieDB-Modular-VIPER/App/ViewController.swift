@@ -19,7 +19,7 @@ class BaseViewController: UITabBarController {
   
   private func setupTabBar() {
     let homeImage = UIImage(systemName: "house.fill")
-    let homeVC = HomeModule().container.resolve(HomeViewController.self)
+    let homeVC = HomeModule().container.resolve(ListGenreViewController.self)
     let home = templateNavigationController(image: homeImage, rootViewController: homeVC!, title: "Home")
 
     

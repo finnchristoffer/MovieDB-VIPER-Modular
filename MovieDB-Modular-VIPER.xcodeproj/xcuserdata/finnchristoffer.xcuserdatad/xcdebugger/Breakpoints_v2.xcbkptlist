@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "09A89529-DFC6-4531-A1E6-72CEDA290F85"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "897AE97A-B567-4D38-A2FD-D3CA7423D59F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB-Modular-VIPER/Feature/Home/Sources/Home/Presentation/Home/Controller/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "897AE97A-B567-4D38-A2FD-D3CA7423D59F - 80dbfa845feeb74c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Home.HomeViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "MovieDB-Modular-VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/finnchristoffer/Desktop/File/Finn&apos;s%20Code%20File/Personal%20Projects/MovieDB-Modular-VIPER/MovieDB-Modular-VIPER/Feature/Home/Sources/Home/Presentation/Home/Controller/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "897AE97A-B567-4D38-A2FD-D3CA7423D59F - 80dbfa845feeb74c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Home.HomeViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "MovieDB-Modular-VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/finnchristoffer/Desktop/File/Finn&apos;s%20Code%20File/Personal%20Projects/MovieDB-Modular-VIPER/MovieDB-Modular-VIPER/Feature/Home/Sources/Home/Presentation/Home/Controller/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

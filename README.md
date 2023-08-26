@@ -15,11 +15,6 @@ MovieFrenzy is available in English.
   <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/78ea9afa-e6f0-4425-aff8-9d181d8a1110" width="19%">
 </p>
 
-### Home
-- Most popular movie
-- Top upcoming movie
-- Top now playing movie
-
 ### List Genre
 - Discover movie from list of genre
 

@@ -52,5 +52,116 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8824E974-043A-42AD-B962-DFAE4DDE5521"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/View/MovieHeaderViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MovieHeaderViewCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "263AFD87-478B-45C1-8A42-E29DBF48AD2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/DetailMovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "configureViews()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "263AFD87-478B-45C1-8A42-E29DBF48AD2D - 1a7f6ce947f21cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in Detail.DetailMovieViewController.configureViews() -&gt; ()"
+                  moduleName = "MovieDB-Modular-VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/finnchristoffer/Desktop/File/Finn&apos;s%20Code%20File/Submission%20LOKER/Mandiri/MovieDB-VIPER-Modular/MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/DetailMovieViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "263AFD87-478B-45C1-8A42-E29DBF48AD2D - 1a7f6ce947f21ce4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in Detail.DetailMovieViewController.configureViews() -&gt; ()"
+                  moduleName = "MovieDB-Modular-VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/finnchristoffer/Desktop/File/Finn&apos;s%20Code%20File/Submission%20LOKER/Mandiri/MovieDB-VIPER-Modular/MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/DetailMovieViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "263AFD87-478B-45C1-8A42-E29DBF48AD2D - 1a7f6ce947f21ca6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in Detail.DetailMovieViewController.configureViews() -&gt; ()"
+                  moduleName = "MovieDB-Modular-VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/finnchristoffer/Desktop/File/Finn&apos;s%20Code%20File/Submission%20LOKER/Mandiri/MovieDB-VIPER-Modular/MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/DetailMovieViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0717509A-5A90-4365-AE85-6E529B6A42D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/ReviewMovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "514FA560-C611-4381-BAF8-8AA41A537424"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB-Modular-VIPER/Feature/Detail/Sources/Detail/Presentation/Controller/ReviewMovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "observeValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

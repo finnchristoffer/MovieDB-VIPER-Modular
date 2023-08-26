@@ -22,6 +22,14 @@ public class CommonModule {
       MovieResponseToDomainMapper()
     }
     
+    container.register(MovieToDomainMapper.self) { _ in
+      MovieToDomainMapper()
+    }
+    
+    container.register(VideoResponseToDomainMapper.self) { _ in
+      VideoResponseToDomainMapper()
+    }
+    
     return container
   }()
 }

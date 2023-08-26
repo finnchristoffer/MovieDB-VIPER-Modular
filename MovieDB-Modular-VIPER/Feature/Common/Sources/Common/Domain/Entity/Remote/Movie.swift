@@ -23,7 +23,7 @@ public struct MovieResponse: Equatable {
 
 public struct Movie: Equatable {
   public var voteAverage: Double?
-  public var genreIds: [Int]?
+  public var genres: [Genre]?
   public var posterPath: String?
   public var popularity: Double?
   public var title: String?
@@ -37,9 +37,9 @@ public struct Movie: Equatable {
   public var id: Int?
   public var overview: String?
   
-  public init(voteAverage: Double?, genreIds: [Int]?, posterPath: String?, popularity: Double?, title: String?, releaseDate: String?, video: Bool?, voteCount: Int?, adult: Bool?, originalTitle: String?, originalLanguage: String?, backdropPath: String?, id: Int?, overview: String? ) {
+  public init(voteAverage: Double?, genres: [Genre]?, posterPath: String?, popularity: Double?, title: String?, releaseDate: String?, video: Bool?, voteCount: Int?, adult: Bool?, originalTitle: String?, originalLanguage: String?, backdropPath: String?, id: Int?, overview: String? ) {
     self.voteAverage = voteAverage
-    self.genreIds = genreIds
+    self.genres = genres
     self.posterPath = posterPath
     self.popularity = popularity
     self.title = title

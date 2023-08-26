@@ -25,7 +25,7 @@ public struct MovieResponseModel: Codable {
 public struct MovieModel: Codable {
   let adult: Bool?
   let backdropPath: String?
-  let genreIDS: [Int]?
+  let genres: [GenreModel]?
   let id: Int?
   let originalLanguage, originalTitle, overview: String?
   let popularity: Double?
@@ -37,7 +37,7 @@ public struct MovieModel: Codable {
   enum CodingKeys: String, CodingKey {
     case adult
     case backdropPath = "backdrop_path"
-    case genreIDS = "genre_ids"
+    case genres
     case id
     case originalLanguage = "original_language"
     case originalTitle = "original_title"

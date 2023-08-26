@@ -2,42 +2,39 @@
 //  File.swift
 //  
 //
-//  Created by Finn Christoffer Kurniawan on 23/08/23.
+//  Created by Finn Christoffer Kurniawan on 25/08/23.
 //
 
 import Core
 
-public struct MovieResponseToDomainMapper: Mapper {
-  public typealias From = MovieResponseModel
-  public typealias To = MovieResponse
+public struct MovieToDomainMapper: Mapper {
+  public typealias From = MovieModel
+  public typealias To = Movie
   
   public init() {}
   
-  public func transform(from this: MovieResponseModel) -> MovieResponse {
-    let movies = this.results?.map { movieModel in
-      return Movie(
-        voteAverage: movieModel.voteAverage,
-        genreIds: movieModel.genreIDS,
-        posterPath: movieModel.posterPath,
-        popularity: movieModel.popularity,
-        title: movieModel.title,
-        releaseDate: movieModel.releaseDate,
-        video: movieModel.video,
-        voteCount: movieModel.voteCount,
-        adult: movieModel.adult,
-        originalTitle: movieModel.originalTitle,
-        originalLanguage: movieModel.originalLanguage,
-        backdropPath: movieModel.backdropPath,
-        id: movieModel.id,
-        overview: movieModel.overview
-      )
-    }
-    
-    return MovieResponse(
-      totalResults: this.totalResults,
-      results: movies,
-      totalPages: this.totalPages,
-      page: this.page
+  public func transform(from this: MovieModel) -> Movie {
+    return Movie(
+      voteAverage: this.voteAverage,
+      genres: mapGenres(from: this.genres ?? []),
+      posterPath: this.posterPath,
+      popularity: this.popularity,
+      title: this.title,
+      releaseDate: this.releaseDate,
+      video: this.video,
+      voteCount: this.voteCount,
+      adult: this.adult,
+      originalTitle: this.originalTitle,
+      originalLanguage: this.originalLanguage,
+      backdropPath: this.backdropPath,
+      id: this.id,
+      overview: this.overview
     )
+  }
+  
+  private func mapGenres(from genreModels: [GenreModel]) -> [Genre] {
+    return genreModels.map { genreModel in
+      return Genre(name: genreModel.name, id: genreModel.id)
+    }
   }
 }

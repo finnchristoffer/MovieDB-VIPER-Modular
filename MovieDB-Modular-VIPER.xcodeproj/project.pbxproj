@@ -15,6 +15,7 @@
 		4A5B94292A93BE460062E1B2 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B94282A93BE460062E1B2 /* Common */; };
 		4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942A2A93BE460062E1B2 /* Detail */; };
 		4A5B942D2A93BE460062E1B2 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942C2A93BE460062E1B2 /* Home */; };
+		4A66B9902A987451003F493C /* IBPCollectionViewCompositionalLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A5B94292A93BE460062E1B2 /* Common in Frameworks */,
+				4A66B9902A987451003F493C /* IBPCollectionViewCompositionalLayout in Frameworks */,
 				4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */,
 				4A5B942D2A93BE460062E1B2 /* Home in Frameworks */,
 			);
@@ -128,6 +130,7 @@
 				4A5B94282A93BE460062E1B2 /* Common */,
 				4A5B942A2A93BE460062E1B2 /* Detail */,
 				4A5B942C2A93BE460062E1B2 /* Home */,
+				4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */,
 			);
 			productName = "MovieDB-Modular-VIPER";
 			productReference = 4A5B94072A92F5E70062E1B2 /* MovieDB-Modular-VIPER.app */;
@@ -157,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 4A5B93FE2A92F5E70062E1B2;
+			packageReferences = (
+				4A66B98E2A987451003F493C /* XCRemoteSwiftPackageReference "IBPCollectionViewCompositionalLayout" */,
+			);
 			productRefGroup = 4A5B94082A92F5E70062E1B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -400,6 +406,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4A66B98E2A987451003F493C /* XCRemoteSwiftPackageReference "IBPCollectionViewCompositionalLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/IBPCollectionViewCompositionalLayout.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		4A5B94282A93BE460062E1B2 /* Common */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -412,6 +429,11 @@
 		4A5B942C2A93BE460062E1B2 /* Home */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Home;
+		};
+		4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A66B98E2A987451003F493C /* XCRemoteSwiftPackageReference "IBPCollectionViewCompositionalLayout" */;
+			productName = IBPCollectionViewCompositionalLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

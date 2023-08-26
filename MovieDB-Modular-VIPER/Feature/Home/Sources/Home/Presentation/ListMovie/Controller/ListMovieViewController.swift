@@ -48,6 +48,7 @@ public class ListMovieViewController: UIViewController {
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    navigationItem.largeTitleDisplayMode = .never
     presenter.fetchGenresMovie(genre: selectedGenreId ?? 0)
   }
   
@@ -57,9 +58,16 @@ public class ListMovieViewController: UIViewController {
     configureViews()
   }
   
+  public override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    navigationItem.largeTitleDisplayMode = .always
+  }
+  
   // MARK: - Helpers
   
   private func configureViews() {
+    navigationItem.title = "List Movie"
+    
     view.addSubview(collectionView)
     collectionView.snp.makeConstraints { make in
       make.edges.equalTo(view.safeAreaLayoutGuide)
@@ -87,5 +95,8 @@ extension ListMovieViewController: UICollectionViewDataSource, UICollectionViewD
     return cell
   }
   
-  
+  public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    guard let movieId = presenter.listMovie.value[indexPath.row].id else { return }
+    presenter.didSelectMovie(with: movieId, from: self)
+  }
 }

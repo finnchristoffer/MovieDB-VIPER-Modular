@@ -42,6 +42,8 @@ public class ListGenreViewController: UIViewController {
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    navigationItem.title = "List Genre"
+    navigationController?.navigationBar.prefersLargeTitles = true
     presenter.fetchGenresMovie()
   }
   
@@ -54,6 +56,7 @@ public class ListGenreViewController: UIViewController {
   // MARK: - Helpers
   
   private func configureViews() {
+    
     view.addSubview(tblViewGenre)
     tblViewGenre.snp.makeConstraints { make in
       make.edges.equalTo(view.safeAreaLayoutGuide)

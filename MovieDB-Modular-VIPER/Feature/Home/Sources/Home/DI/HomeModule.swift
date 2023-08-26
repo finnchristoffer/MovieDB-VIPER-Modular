@@ -58,6 +58,10 @@ public class HomeModule {
       HomeRouter()
     }
     
+    container.register(ListMovieRouter.self) { _ in
+      ListMovieRouter()
+    }
+    
     // MARK: - Presenter
     container.register(ListGenrePresenter.self) { resolver in
       ListGenrePresenter(
@@ -68,6 +72,7 @@ public class HomeModule {
     
     container.register(ListMoviePresenter.self) { resolver in
       ListMoviePresenter(
+        listMovieRouter: resolver.resolve(ListMovieRouter.self)!,
         listMovieInteractor: resolver.resolve(GetListMovieInteractor.self)!
       )
     }

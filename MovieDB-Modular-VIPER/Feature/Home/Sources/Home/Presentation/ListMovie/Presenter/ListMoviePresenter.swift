@@ -13,16 +13,16 @@ import UIKit
 final class ListMoviePresenter {
   var listMovie = BehaviorRelay<[Movie]>(value: [])
   
-//  private let homeRouter: HomeRouterProtocol
+  private let listMovieRouter: ListMovieRouterProtocol
   private let listMovieInteractor: GetListMovieInteractor
   
   private let disposeBag = DisposeBag()
   
   init(
-//    homeRouter: HomeRouter,
+    listMovieRouter: ListMovieRouter,
     listMovieInteractor: GetListMovieInteractor
   ) {
-//    self.homeRouter = homeRouter
+    self.listMovieRouter = listMovieRouter
     self.listMovieInteractor = listMovieInteractor
   }
   
@@ -36,9 +36,7 @@ final class ListMoviePresenter {
       }).disposed(by: disposeBag)
   }
   
-//  func didSelectGenre(at index: Int, from viewController: UIViewController) {
-//    let selectedGenre = genresMovie.value[index].id
-//    homeRouter.navigateToGenreDetail(for: selectedGenre, from: viewController)
-//  }
+  func didSelectMovie(with movieId: Int, from viewController: UIViewController) {
+    listMovieRouter.navigateToDetailMovie(for: movieId, from: viewController)
+  }
 }
-

@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "ibpcollectionviewcompositionallayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/IBPCollectionViewCompositionalLayout.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bb5b8a20892eba40906f45b2b5e4266358b9501b"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
@@ -61,6 +70,15 @@
       "state" : {
         "revision" : "8bc503e60965298984fb58cf47b71c541449fe2a",
         "version" : "2.8.3"
+      }
+    },
+    {
+      "identity" : "youtube-ios-player-helper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/youtube/youtube-ios-player-helper.git",
+      "state" : {
+        "revision" : "f57129cd4380ec0a74dd3a59da3270a1d653d59b",
+        "version" : "1.0.4"
       }
     }
   ],

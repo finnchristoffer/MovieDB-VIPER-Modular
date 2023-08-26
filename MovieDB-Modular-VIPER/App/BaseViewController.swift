@@ -7,6 +7,7 @@
 
 import UIKit
 import Home
+import Account
 
 class BaseViewController: UITabBarController {
 
@@ -22,8 +23,10 @@ class BaseViewController: UITabBarController {
     let homeVC = HomeModule().container.resolve(ListGenreViewController.self)
     let home = templateNavigationController(image: homeImage, rootViewController: homeVC!, title: "Home")
 
+    let accountImage = UIImage(systemName: "person.fill")
+    let account = templateNavigationController(image: accountImage, rootViewController: AccountViewController(), title: "Account")
     
-    viewControllers = [home]
+    viewControllers = [home, account]
   }
   
   private func templateNavigationController(image: UIImage?, rootViewController: UIViewController, title: String) -> UINavigationController {

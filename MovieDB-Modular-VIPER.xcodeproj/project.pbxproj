@@ -9,26 +9,28 @@
 /* Begin PBXBuildFile section */
 		4A5B940B2A92F5E70062E1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B940A2A92F5E70062E1B2 /* AppDelegate.swift */; };
 		4A5B940D2A92F5E70062E1B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B940C2A92F5E70062E1B2 /* SceneDelegate.swift */; };
-		4A5B940F2A92F5E70062E1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B940E2A92F5E70062E1B2 /* ViewController.swift */; };
+		4A5B940F2A92F5E70062E1B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B940E2A92F5E70062E1B2 /* BaseViewController.swift */; };
 		4A5B94142A92F5E80062E1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B94132A92F5E80062E1B2 /* Assets.xcassets */; };
 		4A5B94172A92F5E80062E1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B94152A92F5E80062E1B2 /* LaunchScreen.storyboard */; };
 		4A5B94292A93BE460062E1B2 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B94282A93BE460062E1B2 /* Common */; };
 		4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942A2A93BE460062E1B2 /* Detail */; };
 		4A5B942D2A93BE460062E1B2 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942C2A93BE460062E1B2 /* Home */; };
 		4A66B9902A987451003F493C /* IBPCollectionViewCompositionalLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */; };
+		4A66B9932A99857A003F493C /* Account in Frameworks */ = {isa = PBXBuildFile; productRef = 4A66B9922A99857A003F493C /* Account */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A5B94072A92F5E70062E1B2 /* MovieDB-Modular-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieDB-Modular-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5B940A2A92F5E70062E1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5B940C2A92F5E70062E1B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A5B940E2A92F5E70062E1B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A5B940E2A92F5E70062E1B2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4A5B94132A92F5E80062E1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5B94162A92F5E80062E1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A5B94182A92F5E80062E1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A5B94222A92F9840062E1B2 /* Home */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Home; path = "MovieDB-Modular-VIPER/Feature/Home"; sourceTree = "<group>"; };
 		4A5B94232A92F9DF0062E1B2 /* Detail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Detail; path = "MovieDB-Modular-VIPER/Feature/Detail"; sourceTree = "<group>"; };
 		4A5B94262A93B2930062E1B2 /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Common; path = "MovieDB-Modular-VIPER/Feature/Common"; sourceTree = "<group>"; };
+		4A66B9912A9983EB003F493C /* Account */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Account; path = "MovieDB-Modular-VIPER/Feature/Account"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A5B94292A93BE460062E1B2 /* Common in Frameworks */,
+				4A66B9932A99857A003F493C /* Account in Frameworks */,
 				4A66B9902A987451003F493C /* IBPCollectionViewCompositionalLayout in Frameworks */,
 				4A5B942B2A93BE460062E1B2 /* Detail in Frameworks */,
 				4A5B942D2A93BE460062E1B2 /* Home in Frameworks */,
@@ -80,6 +83,7 @@
 				4A5B94262A93B2930062E1B2 /* Common */,
 				4A5B94222A92F9840062E1B2 /* Home */,
 				4A5B94232A92F9DF0062E1B2 /* Detail */,
+				4A66B9912A9983EB003F493C /* Account */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -89,7 +93,7 @@
 			children = (
 				4A5B940A2A92F5E70062E1B2 /* AppDelegate.swift */,
 				4A5B940C2A92F5E70062E1B2 /* SceneDelegate.swift */,
-				4A5B940E2A92F5E70062E1B2 /* ViewController.swift */,
+				4A5B940E2A92F5E70062E1B2 /* BaseViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -131,6 +135,7 @@
 				4A5B942A2A93BE460062E1B2 /* Detail */,
 				4A5B942C2A93BE460062E1B2 /* Home */,
 				4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */,
+				4A66B9922A99857A003F493C /* Account */,
 			);
 			productName = "MovieDB-Modular-VIPER";
 			productReference = 4A5B94072A92F5E70062E1B2 /* MovieDB-Modular-VIPER.app */;
@@ -189,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5B940F2A92F5E70062E1B2 /* ViewController.swift in Sources */,
+				4A5B940F2A92F5E70062E1B2 /* BaseViewController.swift in Sources */,
 				4A5B940B2A92F5E70062E1B2 /* AppDelegate.swift in Sources */,
 				4A5B940D2A92F5E70062E1B2 /* SceneDelegate.swift in Sources */,
 			);
@@ -434,6 +439,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A66B98E2A987451003F493C /* XCRemoteSwiftPackageReference "IBPCollectionViewCompositionalLayout" */;
 			productName = IBPCollectionViewCompositionalLayout;
+		};
+		4A66B9922A99857A003F493C /* Account */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Account;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

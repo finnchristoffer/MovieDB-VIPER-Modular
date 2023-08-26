@@ -103,6 +103,12 @@ extension DetailMovieViewController: UICollectionViewDataSource, UICollectionVie
       return 0
     }
     switch sectionType {
+    case .review:
+      if presenter.reviewMovie.value.isEmpty {
+        return 0
+      } else {
+        return 1
+      }
     default:
       return 1
     }

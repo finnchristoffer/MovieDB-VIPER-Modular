@@ -96,7 +96,7 @@ class ReviewTableViewCell: UITableViewCell {
   private func setContent() {
     guard let data = data else { return }
     lblUsername.text = data.author
-    lblDateComment.text = data.createdAt
+    lblDateComment.text = data.createdAt?.convertToDateReviewFormatted()
     lblReviewUser.text = data.content
   }
 }

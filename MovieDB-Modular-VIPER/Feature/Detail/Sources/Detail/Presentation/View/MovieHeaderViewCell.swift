@@ -156,6 +156,6 @@ class MovieHeaderViewCell: UICollectionViewCell {
     lblGenre.text = genresName
     lblStar.text = "\(item?.voteAverage ?? 0.0) (\(item?.voteCount?.thousandSeparator() ?? "0"))"
     lblHeart.text = "\(item?.popularity ?? 0.0)"
-    lblReleaseDate.text = item?.releaseDate
+    lblReleaseDate.text = item?.releaseDate?.convertToDateFormatted()
   }
 }

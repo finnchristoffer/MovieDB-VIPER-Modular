@@ -39,12 +39,30 @@ public class ListGenreViewController: UIViewController {
     return tableView
   }()
   
+  private lazy var lblNoInternet: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.boldSystemFont(ofSize: 18)
+    label.numberOfLines = 1
+    label.textColor = UIColor.label
+    label.text = "No Internet Connection"
+    label.isHidden = true
+    return label
+  }()
+  
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationItem.title = "List Genre"
     navigationController?.navigationBar.prefersLargeTitles = true
-    presenter.fetchGenresMovie()
+    
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(networkStatusChanged(_:)),
+      name: .networkStatusChanged,
+      object: nil
+    )
+    
+    NetworkManager.shared.startMonitoring()
   }
   
   public override func viewDidLoad() {
@@ -61,6 +79,11 @@ public class ListGenreViewController: UIViewController {
     tblViewGenre.snp.makeConstraints { make in
       make.edges.equalTo(view.safeAreaLayoutGuide)
     }
+    
+    view.addSubview(lblNoInternet)
+    lblNoInternet.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+    }
   }
   
   private func observeValues() {
@@ -70,6 +93,23 @@ public class ListGenreViewController: UIViewController {
         guard let self = self else { return }
         tblViewGenre.reloadData()
       }).disposed(by: disposeBag)
+  }
+  
+  private func checkInternetConnection() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+      if NetworkManager.shared.isNetworkAvailable {
+        self.presenter.fetchGenresMovie()
+        self.lblNoInternet.isHidden = true
+        self.tblViewGenre.isHidden = false
+      } else {
+        self.tblViewGenre.isHidden = true
+        self.lblNoInternet.isHidden = false
+      }
+    }
+  }
+  
+  @objc private func networkStatusChanged(_ notification: Notification) {
+    checkInternetConnection()
   }
 }
 

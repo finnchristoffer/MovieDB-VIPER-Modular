@@ -43,19 +43,36 @@ public class DetailMovieViewController: UIViewController {
     collectionView.showsVerticalScrollIndicator = false
     return collectionView
   }()
+  
+  private lazy var lblNoInternet: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.boldSystemFont(ofSize: 18)
+    label.numberOfLines = 1
+    label.textColor = UIColor.label
+    label.text = "No Internet Connection"
+    label.isHidden = true
+    return label
+  }()
   // MARK: - Init
   
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    presenter.fetchGenresMovie(id: movieId ?? 0)
-    presenter.fetchTrailerMovie(id: movieId ?? 0)
-    presenter.fetchReviewMovie(id: movieId ?? 0)
+    
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(networkStatusChanged(_:)),
+      name: .networkStatusChanged,
+      object: nil
+    )
+    
+    NetworkManager.shared.startMonitoring()
+    
+    checkInternetConnection()
   }
   
   public override func viewDidLoad() {
     super.viewDidLoad()
-    observeValues()
     configureViews()
   }
   
@@ -66,6 +83,11 @@ public class DetailMovieViewController: UIViewController {
     collectionView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
     }
+    
+    view.addSubview(lblNoInternet)
+    lblNoInternet.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+    }
   }
   
   private func observeValues() {
@@ -73,7 +95,6 @@ public class DetailMovieViewController: UIViewController {
       .observe(on: MainScheduler.instance)
       .subscribe(onNext: { [weak self] data in
         guard let self = self else { return }
-        print("Test Detail Data \(data)")
         self.collectionView.reloadData()
       }).disposed(by: disposeBag)
     
@@ -90,6 +111,26 @@ public class DetailMovieViewController: UIViewController {
         guard let self = self else { return }
         self.collectionView.reloadData()
       }).disposed(by: disposeBag)
+  }
+  
+  private func checkInternetConnection() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+      if NetworkManager.shared.isNetworkAvailable {
+        self.presenter.fetchGenresMovie(id: self.movieId ?? 0)
+        self.presenter.fetchTrailerMovie(id: self.movieId ?? 0)
+        self.presenter.fetchReviewMovie(id: self.movieId ?? 0)
+        self.observeValues()
+        self.lblNoInternet.isHidden = true
+        self.collectionView.isHidden = false
+      } else {
+        self.collectionView.isHidden = true
+        self.lblNoInternet.isHidden = false
+      }
+    }
+  }
+  
+  @objc private func networkStatusChanged(_ notification: Notification) {
+    checkInternetConnection()
   }
 }
 

@@ -17,6 +17,7 @@
 		4A5B942D2A93BE460062E1B2 /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 4A5B942C2A93BE460062E1B2 /* Home */; };
 		4A66B9902A987451003F493C /* IBPCollectionViewCompositionalLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 4A66B98F2A987451003F493C /* IBPCollectionViewCompositionalLayout */; };
 		4A66B9932A99857A003F493C /* Account in Frameworks */ = {isa = PBXBuildFile; productRef = 4A66B9922A99857A003F493C /* Account */; };
+		4A66B9952A9987FE003F493C /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A66B9942A9987FE003F493C /* TMDB-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4A5B94232A92F9DF0062E1B2 /* Detail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Detail; path = "MovieDB-Modular-VIPER/Feature/Detail"; sourceTree = "<group>"; };
 		4A5B94262A93B2930062E1B2 /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Common; path = "MovieDB-Modular-VIPER/Feature/Common"; sourceTree = "<group>"; };
 		4A66B9912A9983EB003F493C /* Account */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Account; path = "MovieDB-Modular-VIPER/Feature/Account"; sourceTree = "<group>"; };
+		4A66B9942A9987FE003F493C /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				4A5B94252A93A7B90062E1B2 /* Resource */,
 				4A5B94242A93A7A40062E1B2 /* App */,
 				4A5B94182A92F5E80062E1B2 /* Info.plist */,
+				4A66B9942A9987FE003F493C /* TMDB-Info.plist */,
 			);
 			path = "MovieDB-Modular-VIPER";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			files = (
 				4A5B94172A92F5E80062E1B2 /* LaunchScreen.storyboard in Resources */,
 				4A5B94142A92F5E80062E1B2 /* Assets.xcassets in Resources */,
+				4A66B9952A9987FE003F493C /* TMDB-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

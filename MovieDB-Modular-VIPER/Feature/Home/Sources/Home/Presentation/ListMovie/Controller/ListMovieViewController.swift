@@ -11,6 +11,7 @@ import RxCocoa
 import SnapKit
 import SkeletonView
 import Common
+import Foundation
 
 public class ListMovieViewController: UIViewController {
   
@@ -44,12 +45,31 @@ public class ListMovieViewController: UIViewController {
     return collectionView
   }()
   
+  private lazy var lblNoInternet: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.boldSystemFont(ofSize: 18)
+    label.numberOfLines = 1
+    label.textColor = UIColor.label
+    label.text = "No Internet Connection"
+    label.isHidden = true
+    return label
+  }()
   
   // MARK: - Lifecycle
   public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationItem.largeTitleDisplayMode = .never
-    presenter.fetchGenresMovie(genre: selectedGenreId ?? 0)
+    
+    NotificationCenter.default.addObserver(
+        self,
+        selector: #selector(networkStatusChanged(_:)),
+        name: .networkStatusChanged,
+        object: nil
+    )
+    
+    NetworkManager.shared.startMonitoring()
+    
+    checkInternetConnection()
   }
   
   public override func viewDidLoad() {
@@ -72,6 +92,11 @@ public class ListMovieViewController: UIViewController {
     collectionView.snp.makeConstraints { make in
       make.edges.equalTo(view.safeAreaLayoutGuide)
     }
+    
+    view.addSubview(lblNoInternet)
+    lblNoInternet.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+    }
   }
   
   private func observeValues() {
@@ -81,6 +106,23 @@ public class ListMovieViewController: UIViewController {
         guard let self = self else { return }
         self.collectionView.reloadData()
       }).disposed(by: disposeBag)
+  }
+  
+  private func checkInternetConnection() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+      if NetworkManager.shared.isNetworkAvailable {
+        self.presenter.fetchGenresMovie(genre: self.selectedGenreId ?? 0)
+        self.lblNoInternet.isHidden = true
+        self.collectionView.isHidden = false
+      } else {
+        self.collectionView.isHidden = true
+        self.lblNoInternet.isHidden = false
+      }
+    }
+  }
+  
+  @objc private func networkStatusChanged(_ notification: Notification) {
+      checkInternetConnection()
   }
 }
 

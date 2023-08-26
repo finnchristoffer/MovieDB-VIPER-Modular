@@ -9,12 +9,11 @@ MovieFrenzy is available in English.
 ## Features
 <p align="center">
   <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/29373488-db98-4090-88aa-a0692bc0351c" width="19%">
-  <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/eb423912-2aca-477f-88dd-5f689635f22b" width="19%">
-  <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/119c7fea-4d92-4b66-b253-33c125bc040d" width="19%">
-  <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/107cfd4a-2465-47dd-87e9-160990cdb173" width="19%">
-  <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/f04913ab-0fc6-4c19-b1de-d455ad2c21c8" width="19%">
+  <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/943b637e-4039-4c56-b730-7b833bbdec0a" width="19%">
+  <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/be77f89f-a668-4f22-b15a-759d3fd02fce" width="19%">
+  <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/7119f1be-9ace-4598-972c-36b608cb2f65" width="19%">
+  <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/78ea9afa-e6f0-4425-aff8-9d181d8a1110" width="19%">
 </p>
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-26 at 08 58 53]()
 
 ### Home
 - Most popular movie

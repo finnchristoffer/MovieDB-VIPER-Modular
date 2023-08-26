@@ -1,22 +1,20 @@
-![1](https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/3a6117c7-f99f-4b9b-b454-23c0fb2fdb84)
-
 # MovieFrenzy
 Discover movie that you like.
 
-Get acquainted with a wide range of information about movies, including the cast, score, duration movie, genre, synopsis, and more. Easily find any movie by its title in English. Create your own favorite list for convenient access.
+Get acquainted with a wide range of information about movies, score, duration movie, genre, synopsis, and more. Easily find any movie by its title in English. Create your own favorite list for convenient access.
 
 MovieFrenzy is available in English.
 > Other language will be added if necessary
 
 ## Features
 <p align="center">
-  <img src="![Simulator Screen Recording - iPhone 14 Pro - 2023-08-26 at 08 58 53](https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/29373488-db98-4090-88aa-a0692bc0351c)" width="19%">
+  <img src="https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/29373488-db98-4090-88aa-a0692bc0351c" width="19%">
   <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/eb423912-2aca-477f-88dd-5f689635f22b" width="19%">
   <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/119c7fea-4d92-4b66-b253-33c125bc040d" width="19%">
   <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/107cfd4a-2465-47dd-87e9-160990cdb173" width="19%">
   <img src="https://github.com/finnchristoffer/MovieDB-iOS-Modular/assets/75067308/f04913ab-0fc6-4c19-b1de-d455ad2c21c8" width="19%">
 </p>
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-26 at 08 58 53](https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/29373488-db98-4090-88aa-a0692bc0351c)
+![Simulator Screen Recording - iPhone 14 Pro - 2023-08-26 at 08 58 53]()
 
 ### Home
 - Most popular movie

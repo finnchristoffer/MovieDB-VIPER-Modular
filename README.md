@@ -28,7 +28,7 @@ MovieFrenzy is available in English.
 - Developer profile (🧑🏻‍💻me)
 
 ## Dependency Diagram
-![Untitled Diagram drawio](https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/77853796-8fa0-43c9-991a-4ce09923ce79)
+![Untitled Diagram drawio (1)](https://github.com/finnchristoffer/MovieDB-VIPER-Modular/assets/75067308/ff45cf78-2ee1-44af-ba7a-9cb6d483ce33)
 
 ## Getting Started
 ### Prerequisites
